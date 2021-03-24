@@ -1,0 +1,47 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aside section */
+
+.mycontainer-aside {
+  width: 200px;
+  height: calc(100vh - 60px);
+  background-color: black;
+}
+
+.logo img {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.home img {
+  width: 10%;
+  vertical-align: middle;
+}
+
+.home ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home ul > li:first-child {
+  border-left: 2px solid #aeff2e;
+}
+
+.home ul > li {
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.home ul > li > a {
+  color: grey;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.home ul > li > a:hover {
+  color: white;
+  text-decoration: none;
+}
