@@ -2,6 +2,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.text-white {
+  color: white;
+}
+
+.text-grey {
+  color: grey;
+}
+
 /* Aside section */
 
 .mycontainer-aside {
@@ -10,11 +18,30 @@ html {
   background-color: black;
 }
 
+aside div ul li a,
+aside div a {
+  color: grey;
+}
+
+aside div ul li a:hover,
+aside div a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+aside div ul {
+  list-style: none;
+}
+
+/* Logo section */
+
 .logo img {
   width: 80%;
   padding: 10px;
   margin-bottom: 10px;
 }
+
+/* Home, Cerca, Libreria section */
 
 .home img {
   width: 10%;
@@ -22,8 +49,11 @@ html {
 }
 
 .home ul {
-  list-style: none;
   padding: 0;
+}
+
+.home ul > li:last-child {
+  padding-bottom: 10px;
 }
 
 .home ul > li:first-child {
@@ -42,12 +72,57 @@ html {
 }
 
 .home ul > li > a {
-  color: grey;
   vertical-align: middle;
-  font-weight: 500;
+  text-decoration: none;
 }
 
 .home ul > li > a:hover {
   color: white;
   text-decoration: none;
+}
+
+/* Playlist section */
+
+.playlist {
+  padding-left: 12px;
+}
+
+.playlist h4 {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.playlist div {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.playlist a {
+  padding-left: 5px;
+}
+
+/* Playlist list section */
+
+.playlist-list {
+  display: flex;
+  flex-grow: 1;
+}
+
+.playlist-list ul {
+  padding-left: 12px;
+}
+
+.playlist-list ul > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.playlist-list ul > li:first-child {
+  padding-top: 15px;
 }
