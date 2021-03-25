@@ -5,20 +5,23 @@ html {
 
 .text-white {
   color: white;
+  margin: 0;
 }
 
 .text-grey {
   color: #606060;
+  margin: 0;
 }
 
 /* Aside section */
 
 .mycontainer-aside {
   max-width: 200px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px);
   background-color: black;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 aside div ul li a,
@@ -108,6 +111,7 @@ aside div ul {
 
 .playlist-list {
   flex-grow: 1;
+  overflow: auto;
 }
 
 .playlist-list ul {
@@ -148,10 +152,13 @@ aside div ul {
 /* Tool-bar section */
 
 .tool-bar {
-  height: 80px;
+  height: 60px;
   background-color: #282828;
-  padding: 15px;
   color: #606060;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tool-bar a {
@@ -164,30 +171,25 @@ aside div ul {
 
 /* Sinister section */
 
-.sinister::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .sinister img {
-  width: 15%;
-  float: left;
-  padding-right: 10px;
+  width: 10%;
 }
 
 .sinister div {
   display: inline-block;
-}
-
-.sinister div > p {
-  margin: 0;
+  vertical-align: middle;
 }
 
 .sinister div > p:last-child {
   font-size: 12px;
 }
 
-.sinister a > i {
-  padding-left: 15px;
+.sinister a {
+  padding-left: 12px;
+}
+
+/* Media-player section */
+
+.media-player div i {
+  color: white;
 }
