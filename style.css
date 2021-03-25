@@ -264,13 +264,14 @@ aside div ul {
 
 .library {
   width: calc(100vw - 200px);
+  flex-direction: column;
 }
 
 .upgrade {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: black;
+  background-color: #090b13;
   height: 71.97px;
 }
 
@@ -281,6 +282,79 @@ aside div ul {
   padding: 8px 18px;
   border-radius: 50px;
   margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 11px;
 }
 
-/* Charts sectin */
+.upgrade a:hover {
+  text-decoration: none;
+}
+
+/* Charts / Library section */
+
+.charts-library {
+  height: calc(100vh - 151.97);
+  background-color: #141a23;
+  padding: 0 5px;
+}
+
+/* Charts section */
+
+.charts {
+  justify-self: flex-end;
+}
+
+.charts ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
+.charts ul > li > a {
+  color: #606060;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 10px;
+}
+
+.charts ul > li > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.charts ul > li {
+  display: inline-block;
+}
+
+/* Recent played section */
+
+.recenty-played h3 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.recenty-played div {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.recenty-played div > img {
+  width: 120px;
+}
+
+.recenty-played div > h5 {
+  color: white;
+  margin: 5px 0;
+}
+
+.recenty-played div > p {
+  color: #9d9d9d;
+  margin: 0 0;
+  font-size: 12px;
+}
