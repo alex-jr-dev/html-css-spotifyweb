@@ -13,6 +13,10 @@ html {
   margin: 0;
 }
 
+.mycontainer {
+  display: flex;
+}
+
 /* Aside section */
 
 .mycontainer-aside {
@@ -172,6 +176,7 @@ aside div ul {
 
 .sinister {
   color: white;
+  flex-basis: 250px;
 }
 
 .sinister img {
@@ -202,7 +207,7 @@ aside div ul {
 /* Media-player section */
 
 .media-player {
-  width: 350px;
+  flex-basis: 350px;
 }
 
 .media-player div i {
@@ -224,8 +229,9 @@ aside div ul {
 /* Progress bar section */
 
 .wrapper-progress {
+  display: flex;
+  flex-grow: 1;
   max-width: 300px;
-  display: inline-block;
 }
 
 .myprogress-bar .progress {
@@ -251,3 +257,30 @@ aside div ul {
   background-color: #606060;
   border-radius: 15px;
 }
+
+/* Right section */
+
+/* Upgrade section */
+
+.library {
+  width: calc(100vw - 200px);
+}
+
+.upgrade {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: black;
+  height: 71.97px;
+}
+
+.upgrade a {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 8px 18px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+/* Charts sectin */
