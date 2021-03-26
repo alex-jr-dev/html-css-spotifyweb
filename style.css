@@ -225,7 +225,7 @@ aside div ul {
 }
 
 .media-player div a:nth-child(3) {
-  font-size: 25px;
+  font-size: 30px;
   vertical-align: middle;
   padding: 0 15px;
 }
@@ -234,8 +234,7 @@ aside div ul {
 
 .wrapper-progress {
   display: flex;
-  flex-grow: 1;
-  max-width: 300px;
+  flex: 1 1 300px;
 }
 
 .minutes {
@@ -246,12 +245,12 @@ aside div ul {
 
 .myprogress-bar {
   display: flex;
+  align-items: center;
 }
 
 .myprogress-bar .progress {
   height: 4px;
-  margin-bottom: 15px;
-  margin-top: 2px;
+  margin: 0;
   background-color: #606060;
   border-radius: 15px;
   width: 100%;
@@ -261,15 +260,23 @@ aside div ul {
   background-color: #9d9d9d;
 }
 
+.myprogress-bar:hover .progress > .progress-bar {
+  background-color: #aeff2e;
+}
+
 /* Volume section */
 
 .volume {
-  flex-basis: 250px;
+  flex-basis: 200px;
 }
 
 .myprogress-bar a {
   padding: 0 8px;
   color: white;
+}
+
+.volume {
+  padding-right: 12px;
 }
 
 /* Right section */
@@ -315,7 +322,7 @@ aside div ul {
 .charts-library {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 141.91);
+  height: 100% - 71.97px;
   background-color: #141a23;
   padding: 0 5px;
 }
@@ -326,11 +333,15 @@ aside div ul {
   justify-self: flex-end;
 }
 
-/* .hr-green {
-  border: 1px solid greenyellow;
-  width: 40%;
-  padding: 0;
-} */
+.hr-green {
+  padding: 0 25px;
+  height: 1px;
+}
+
+.hr-green div {
+  background-color: #aeff2e;
+  height: 100%;
+}
 
 .charts ul {
   list-style: none;
@@ -338,10 +349,6 @@ aside div ul {
   padding-left: 0;
   padding-top: 15px;
   padding-bottom: 35px;
-}
-
-.charts ul > li:first-child {
-  border-bottom: 1px solid #aeff2e;
 }
 
 .charts ul > li > a {
@@ -385,11 +392,12 @@ aside div ul {
 }
 
 .recenty-played div > img {
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
+  margin: auto;
 }
 
-.recenty-played div > img:hover {
+.recenty-played div:hover > img {
   background-color: black;
   opacity: 30%;
 }
@@ -397,13 +405,14 @@ aside div ul {
 .recenty-played div > h5 {
   color: white;
   margin: 5px 0;
-  max-width: fit-content;
+  text-align: center;
 }
 
 .recenty-played div > p {
   color: #9d9d9d;
   margin: 0 0;
   font-size: 12px;
+  text-align: center;
 }
 
 /* Created for section */
@@ -428,13 +437,14 @@ aside div ul {
 }
 
 .created-for div > img {
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
 }
 
 .created-for div > h5 {
   color: white;
   margin: 5px 0;
+  text-align: center;
 }
 
 /* Artists section */
@@ -459,7 +469,7 @@ aside div ul {
 }
 
 .artists div > img {
-  max-width: 150px;
+  max-width: 200px;
   width: 100%;
   border-radius: 50%;
 }
@@ -467,4 +477,5 @@ aside div ul {
 .artists div > h5 {
   color: white;
   margin: 5px 0;
+  text-align: center;
 }
