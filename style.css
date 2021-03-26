@@ -346,7 +346,7 @@ aside div ul {
 }
 
 .recenty-played div > img {
-  width: 120px;
+  width: 150px;
 }
 
 .recenty-played div > h5 {
@@ -373,7 +373,7 @@ aside div ul {
   color: #606060;
   padding-left: 10px;
   font-size: 12px;
-  padding-top: 2px;
+  padding-top: 3px;
   padding-bottom: 10px;
 }
 
@@ -383,10 +383,42 @@ aside div ul {
 }
 
 .created-for div > img {
-  width: 120px;
+  width: 150px;
 }
 
 .created-for div > h5 {
+  color: white;
+  margin: 5px 0;
+}
+
+/* Artists section */
+
+.artists h3 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 10px;
+}
+
+.artists p {
+  color: #606060;
+  padding-left: 10px;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+
+.artists div {
+  display: inline-block;
+  padding: 0 12px;
+}
+
+.artists div > img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.artists div > h5 {
   color: white;
   margin: 5px 0;
 }
