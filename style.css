@@ -268,11 +268,9 @@ aside div ul {
 /* Upgrade section */
 
 .library {
-  display: flex;
   width: calc(100vw - 200px);
-  flex-direction: column;
-  overflow: auto;
   height: calc(100vh - 70px);
+  overflow: auto;
 }
 
 .upgrade {
@@ -342,6 +340,11 @@ aside div ul {
 
 /* Recent played section */
 
+.wrapper-cover {
+  display: flex;
+  align-items: baseline;
+}
+
 .recenty-played h3 {
   color: white;
   margin-top: 0;
@@ -350,7 +353,6 @@ aside div ul {
 }
 
 .recenty-played div {
-  display: inline-block;
   padding: 0 10px;
 }
 
