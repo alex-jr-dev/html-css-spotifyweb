@@ -242,7 +242,6 @@ aside div ul {
   height: 4px;
   margin-bottom: 15px;
   margin-top: 2px;
-  overflow: none;
   background-color: #606060;
   border-radius: 15px;
   width: 100%;
@@ -254,13 +253,8 @@ aside div ul {
 
 /* Volume section */
 
-.volume .progess {
-  height: 4px;
-  margin-bottom: 15px;
-  margin-top: 2px;
-  overflow: none;
-  background-color: #606060;
-  border-radius: 15px;
+.volume {
+  flex-basis: 250px;
 }
 
 /* Right section */
@@ -340,6 +334,10 @@ aside div ul {
 
 /* Recent played section */
 
+.space-in-row {
+  flex-basis: calc(100vw / 6);
+}
+
 .wrapper-cover {
   display: flex;
   align-items: baseline;
@@ -357,7 +355,8 @@ aside div ul {
 }
 
 .recenty-played div > img {
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
 }
 
 .recenty-played div > h5 {
@@ -390,12 +389,12 @@ aside div ul {
 }
 
 .created-for div {
-  display: inline-block;
   padding: 0 12px;
 }
 
 .created-for div > img {
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
 }
 
 .created-for div > h5 {
@@ -421,12 +420,12 @@ aside div ul {
 }
 
 .artists div {
-  display: inline-block;
   padding: 0 12px;
 }
 
 .artists div > img {
-  width: 150px;
+  max-width: 150px;
+  width: 100%;
   border-radius: 50%;
 }
 
