@@ -194,10 +194,14 @@ aside div ul {
   margin-bottom: 0;
 }
 
-.sinister div > p:last-child {
+.sinister div > a {
   font-size: 10px;
-  margin-bottom: 0;
+  padding-left: 0;
   color: #606060;
+}
+
+.sinister div > a:hover {
+  color: white;
 }
 
 .sinister a {
@@ -234,6 +238,12 @@ aside div ul {
   max-width: 300px;
 }
 
+.minutes {
+  margin: 0 15px;
+  font-size: 10px;
+  color: white;
+}
+
 .myprogress-bar {
   display: flex;
 }
@@ -255,6 +265,11 @@ aside div ul {
 
 .volume {
   flex-basis: 250px;
+}
+
+.myprogress-bar a {
+  padding: 0 8px;
+  color: white;
 }
 
 /* Right section */
@@ -287,6 +302,11 @@ aside div ul {
 }
 
 .upgrade a:hover {
+  font-size: 12px;
+  border: 2px solid white;
+}
+
+.upgrade a:hover {
   text-decoration: none;
 }
 
@@ -306,12 +326,22 @@ aside div ul {
   justify-self: flex-end;
 }
 
+/* .hr-green {
+  border: 1px solid greenyellow;
+  width: 40%;
+  padding: 0;
+} */
+
 .charts ul {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
   padding-top: 15px;
   padding-bottom: 35px;
+}
+
+.charts ul > li:first-child {
+  border-bottom: 1px solid #aeff2e;
 }
 
 .charts ul > li > a {
@@ -357,6 +387,11 @@ aside div ul {
 .recenty-played div > img {
   max-width: 150px;
   width: 100%;
+}
+
+.recenty-played div > img:hover {
+  background-color: black;
+  opacity: 30%;
 }
 
 .recenty-played div > h5 {
