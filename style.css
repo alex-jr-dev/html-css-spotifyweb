@@ -28,6 +28,12 @@ html {
   overflow: auto;
 }
 
+@media all and (max-width: 767px) {
+  .mycontainer-aside {
+    max-width: 50px;
+  }
+}
+
 aside div ul li a,
 aside div a {
   color: #606060;
@@ -45,12 +51,27 @@ aside div ul {
 
 /* Logo section */
 
-.logo img {
+.logo img:first-child {
   width: 80%;
   padding: 10px;
   margin-bottom: 10px;
 }
 
+.logo img:last-child {
+  width: 25px;
+  display: none;
+}
+
+@media all and (max-width: 767px) {
+  .logo img:first-child {
+    display: none;
+  }
+
+  .logo img:last-child {
+    display: block;
+    margin: 5px 12.5px;
+  }
+}
 /* Home, Cerca, Libreria section */
 
 .home img {
@@ -85,6 +106,33 @@ aside div ul {
   vertical-align: middle;
 }
 
+@media all and (max-width: 767px) {
+  .home ul > li:first-child {
+    border-left: none;
+  }
+
+  .home ul > li > a {
+    display: none;
+  }
+
+  .home img {
+    width: 20px;
+  }
+
+  .home ul > li {
+    padding: 5px 15px;
+  }
+
+  .home ul > li > img {
+    color: #9d9d9d;
+  }
+
+  .home ul > li:nth-child(2),
+  .home ul > li:nth-child(3) {
+    padding-left: 15px;
+  }
+}
+
 /* Playlist section */
 
 .playlist {
@@ -111,6 +159,12 @@ aside div ul {
   padding-left: 5px;
 }
 
+@media all and (max-width: 767px) {
+  .playlist {
+    visibility: hidden;
+  }
+}
+
 /* Playlist list section */
 
 .playlist-list {
@@ -129,6 +183,12 @@ aside div ul {
 
 .playlist-list ul > li:first-child {
   padding-top: 15px;
+}
+
+@media all and (max-width: 767px) {
+  .playlist-list {
+    visibility: hidden;
+  }
 }
 
 /* Account section */
@@ -151,6 +211,39 @@ aside div ul {
 .account p {
   display: inline-block;
   padding-left: 5px;
+}
+
+.myarrowdown {
+  display: none;
+  font-size: 15px;
+}
+
+@media all and (max-width: 767px) {
+  .hr,
+  .account a,
+  .account p {
+    display: none;
+  }
+
+  .myarrowdown {
+    display: block;
+    font-size: 15px;
+    color: #9d9d9d;
+    margin: 5px 18px;
+  }
+
+  .myarrowdown:hover {
+    color: white;
+  }
+
+  .account {
+    padding: 0;
+  }
+
+  .account i:last-of-type {
+    font-size: 20px;
+    padding: 5px 15px;
+  }
 }
 
 /* Tool-bar section */
@@ -375,6 +468,22 @@ aside div ul {
   flex-basis: calc(100vw / 6);
 }
 
+@media all and (max-width: 1024px) {
+  .space-in-row {
+    flex-basis: calc(100vw / 4);
+  }
+}
+
+.space-in-row i {
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  font-size: 400%;
+  color: white;
+  visibility: hidden;
+}
+
 .wrapper-cover {
   display: flex;
   align-items: baseline;
@@ -400,6 +509,11 @@ aside div ul {
 .recenty-played div:hover > img {
   background-color: black;
   opacity: 30%;
+  visibility: visible;
+}
+
+.recenty-played div:hover .space-in-row i {
+  visibility: visible;
 }
 
 .recenty-played div > h5 {
