@@ -559,6 +559,10 @@ aside div ul {
   .charts ul > li {
     padding-top: 15px;
   }
+
+  .charts ul {
+    padding-top: 0;
+  }
 }
 
 /* Recent played section */
