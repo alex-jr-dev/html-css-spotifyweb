@@ -92,6 +92,10 @@ aside div ul {
   border-left: 2px solid #aeff2e;
 }
 
+.home ul > li:first-child > a {
+  color: white;
+}
+
 .home ul > li:nth-child(2),
 .home ul > li:nth-child(3) {
   padding-left: 12px;
@@ -271,6 +275,8 @@ aside div ul {
 .sinister {
   color: white;
   flex-basis: 250px;
+  display: flex;
+  align-items: center;
 }
 
 .sinister img {
@@ -278,28 +284,58 @@ aside div ul {
   padding-left: 12px;
 }
 
-.sinister div {
-  display: inline-block;
-  vertical-align: middle;
+.sinister div:first-of-type {
   padding-left: 5px;
+}
+
+.sinister div:last-of-type {
+  padding-left: 3px;
 }
 
 .sinister div > p:first-child {
   margin-bottom: 0;
 }
 
-.sinister div > a {
+.sinister div > a > p {
   font-size: 10px;
   padding-left: 0;
   color: #606060;
+  margin: 0 0;
 }
 
-.sinister div > a:hover {
+.sinister div > a:hover > p {
   color: white;
 }
 
-.sinister a {
-  padding-left: 12px;
+.sinister .icons a {
+  padding-left: 8px;
+  font-size: 15px;
+}
+
+@media all and (max-width: 480px) {
+  .sinister div > a {
+    font-size: 9px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .sinister .icons a {
+    padding-left: 6px;
+    font-size: 10px;
+  }
+
+  .sinister img {
+    padding-left: 8px;
+    width: 45px;
+  }
+
+  .sinister div:first-of-type > p:first-of-type {
+    font-size: 10px;
+  }
+
+  .sinister div:first-of-type > a > p {
+    font-size: 8px;
+  }
 }
 
 /* Media-player section */
@@ -322,6 +358,22 @@ aside div ul {
   font-size: 30px;
   vertical-align: middle;
   padding: 0 15px;
+}
+
+.media-player div a:nth-child(3):hover {
+  font-size: 35px;
+}
+
+@media all and (max-width: 480px) {
+  .media-player div a {
+    padding: 0 2.5px;
+    font-size: 10px;
+  }
+
+  .media-player div a:nth-child(3) {
+    padding: 0 8px;
+    font-size: 20px;
+  }
 }
 
 /* Progress bar section */
@@ -376,7 +428,7 @@ aside div ul {
 /* Volume section */
 
 .volume {
-  flex-basis: 250px;
+  flex-basis: 180px;
   padding-right: 12px;
 }
 
@@ -392,6 +444,21 @@ aside div ul {
 .volume .myprogress-bar .progress > i {
   color: white;
   left: 18%;
+}
+
+@media all and (max-width: 480px) {
+  .myprogress-bar a {
+    padding: 0 3px;
+    font-size: 10px;
+  }
+
+  .volume {
+    padding-right: 8px;
+  }
+
+  .myprogress-bar a:last-of-type {
+    padding-right: 10px;
+  }
 }
 /* Right section */
 
