@@ -150,7 +150,7 @@ aside div ul {
   text-transform: uppercase;
 }
 
-.playlist div {
+.playlist div a i {
   height: 30px;
   width: 30px;
   background-color: grey;
@@ -160,8 +160,12 @@ aside div ul {
   display: inline-block;
 }
 
-.playlist a {
-  padding-left: 5px;
+.playlist div:hover a i {
+  background-color: white;
+}
+
+.playlist div:hover a {
+  color: white;
 }
 
 @media all and (max-width: 480px) {
@@ -274,7 +278,7 @@ aside div ul {
 
 .sinister {
   color: white;
-  flex-basis: 250px;
+  flex-basis: 200px;
   display: flex;
   align-items: center;
 }
@@ -358,6 +362,12 @@ aside div ul {
   font-size: 30px;
   vertical-align: middle;
   padding: 0 15px;
+}
+
+.media-player div a:nth-child(3) > i {
+  width: 40px;
+  height: 50px;
+  border: 1px solid red;
 }
 
 .media-player div a:nth-child(3):hover {
@@ -498,9 +508,6 @@ aside div ul {
 
 .upgrade a:hover {
   font-size: 12px;
-}
-
-.upgrade a:hover {
   text-decoration: none;
 }
 
@@ -661,7 +668,7 @@ aside div ul {
 }
 
 .created-for div {
-  padding: 0 5px;
+  padding: 0 2.5px;
 }
 
 .created-for div > img {
@@ -703,7 +710,7 @@ aside div ul {
 }
 
 .artists div {
-  padding: 0 5px;
+  padding: 0 2.5px;
 }
 
 .artists div > img {
