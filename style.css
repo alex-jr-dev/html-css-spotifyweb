@@ -349,11 +349,15 @@ aside div ul {
   border-radius: 15px;
   width: 100%;
   position: relative;
+  overflow: visible;
 }
 
 .myprogress-bar .progress > i {
   position: absolute;
-  font-size: 50px;
+  top: -5px;
+  left: 28%;
+  font-size: 14px;
+  visibility: hidden;
 }
 
 .myprogress-bar .progress > .progress-bar {
@@ -362,6 +366,10 @@ aside div ul {
 
 .myprogress-bar:hover .progress > .progress-bar {
   background-color: #aeff2e;
+}
+
+.myprogress-bar:hover .progress i {
+  visibility: visible;
 }
 
 /* Volume section */
@@ -374,6 +382,11 @@ aside div ul {
 .myprogress-bar a {
   padding: 0 8px;
   color: white;
+}
+
+.volume .myprogress-bar .progress > i {
+  color: white;
+  left: 18%;
 }
 /* Right section */
 
