@@ -483,17 +483,6 @@ aside div ul {
   }
 }
 
-.space-in-row i {
-  margin: 0;
-  font-size: 50px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: visible;
-}
-
 .wrapper-cover {
   display: flex;
   align-items: baseline;
@@ -510,7 +499,23 @@ aside div ul {
   padding: 0 10px;
 }
 
-.recenty-played div > img {
+.wrapper-img {
+  position: relative;
+  text-align: center;
+}
+
+.wrapper-img i {
+  margin: 0;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.wrapper-img img {
   max-width: 200px;
   width: 100%;
   margin: auto;
@@ -522,7 +527,7 @@ aside div ul {
   visibility: visible;
 }
 
-.recenty-played div:hover .space-in-row i {
+.recenty-played div:hover > i {
   visibility: visible;
 }
 
