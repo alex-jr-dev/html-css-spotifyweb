@@ -317,35 +317,29 @@ aside div ul {
 }
 
 @media all and (max-width: 480px) {
-  .sinister div > a {
-    font-size: 9px;
-  }
-}
-
-@media all and (max-width: 480px) {
   .sinister .icons a {
     padding-left: 6px;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .sinister img {
     padding-left: 8px;
-    width: 45px;
+    width: 48px;
   }
 
   .sinister div:first-of-type > p:first-of-type {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .sinister div:first-of-type > a > p {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
 /* Media-player section */
 
 .media-player {
-  flex-basis: 350px;
+  flex-basis: 450px;
 }
 
 .media-player div i {
@@ -361,28 +355,28 @@ aside div ul {
 .media-player div a:nth-child(3) {
   font-size: 30px;
   vertical-align: middle;
-  padding: 0 15px;
 }
 
 .media-player div a:nth-child(3) > i {
-  width: 40px;
-  height: 50px;
-  border: 1px solid red;
+  width: 35px;
 }
 
-.media-player div a:nth-child(3):hover {
+.media-player div a:nth-child(3):hover > i {
   font-size: 35px;
 }
 
 @media all and (max-width: 480px) {
   .media-player div a {
     padding: 0 2.5px;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .media-player div a:nth-child(3) {
-    padding: 0 8px;
-    font-size: 20px;
+    font-size: 25px;
+  }
+
+  .media-player div a:nth-child(3):hover > i {
+    font-size: 30px;
   }
 }
 
@@ -438,7 +432,7 @@ aside div ul {
 /* Volume section */
 
 .volume {
-  flex-basis: 180px;
+  flex-basis: 200px;
   padding-right: 12px;
 }
 
@@ -459,7 +453,7 @@ aside div ul {
 @media all and (max-width: 480px) {
   .myprogress-bar a {
     padding: 0 3px;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .volume {
