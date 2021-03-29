@@ -555,7 +555,7 @@ aside div ul {
   display: inline-block;
 }
 
-@media all and (max-width: 580px) {
+@media all and (max-width: 733px) {
   .charts ul > li {
     padding-top: 15px;
   }
