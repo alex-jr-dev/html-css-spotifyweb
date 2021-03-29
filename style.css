@@ -362,6 +362,7 @@ aside div ul {
 
 .myprogress-bar .progress > .progress-bar {
   background-color: #9d9d9d;
+  border-radius: 15px;
 }
 
 .myprogress-bar:hover .progress > .progress-bar {
@@ -380,8 +381,12 @@ aside div ul {
 }
 
 .myprogress-bar a {
-  padding: 0 8px;
+  padding: 0 6px;
   color: white;
+}
+
+.myprogress-bar a:last-of-type {
+  padding-right: 12px;
 }
 
 .volume .myprogress-bar .progress > i {
@@ -399,7 +404,7 @@ aside div ul {
   background-color: #141a23;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .library {
     width: calc(100vw - 50px);
   }
@@ -498,6 +503,15 @@ aside div ul {
   .space-in-row {
     flex-basis: calc(100% / 2);
   }
+
+  .recenty-played div {
+    margin-top: 10px;
+  }
+
+  .recenty-played div:first-of-type,
+  .recenty-played div:nth-of-type(2) {
+    margin-top: 0;
+  }
 }
 
 .wrapper-cover {
@@ -510,7 +524,7 @@ aside div ul {
   color: white;
   margin-top: 0;
   margin-bottom: 15px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .recenty-played div {
@@ -568,7 +582,7 @@ aside div ul {
   color: white;
   margin-top: 20px;
   margin-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .created-for p {
@@ -576,16 +590,26 @@ aside div ul {
   padding-left: 10px;
   font-size: 12px;
   padding-top: 3px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .created-for div {
-  padding: 0 12px;
+  padding: 0 5px;
 }
 
 .created-for div > img {
   max-width: 200px;
   width: 100%;
+}
+
+.created-for div:hover > img {
+  background-color: black;
+  opacity: 30%;
+  visibility: visible;
+}
+
+.created-for div:hover > i {
+  visibility: visible;
 }
 
 .created-for div > h5 {
@@ -600,25 +624,35 @@ aside div ul {
   color: white;
   margin-top: 20px;
   margin-bottom: 0px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .artists p {
   color: #606060;
-  padding-left: 10px;
+  padding-left: 8px;
   font-size: 12px;
   padding-top: 3px;
   padding-bottom: 10px;
 }
 
 .artists div {
-  padding: 0 12px;
+  padding: 0 5px;
 }
 
 .artists div > img {
   max-width: 200px;
   width: 100%;
   border-radius: 50%;
+}
+
+.artists div:hover > img {
+  background-color: black;
+  opacity: 30%;
+  visibility: visible;
+}
+
+.artists div:hover > i {
+  visibility: visible;
 }
 
 .artists div > h5 {
