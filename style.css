@@ -427,11 +427,11 @@ aside div ul {
   border-radius: 15px;
 }
 
-.myprogress-bar:hover .progress > .progress-bar {
+.wrapper-progress:hover .progress > .progress-bar {
   background-color: #aeff2e;
 }
 
-.myprogress-bar:hover .progress i {
+.wrapper-progress:hover .progress i {
   visibility: visible;
 }
 
