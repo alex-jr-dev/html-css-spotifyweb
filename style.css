@@ -28,7 +28,7 @@ html {
   overflow: auto;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .mycontainer-aside {
     max-width: 50px;
     overflow: hidden;
@@ -63,7 +63,7 @@ aside div ul {
   display: none;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .logo img:first-child {
     display: none;
   }
@@ -107,7 +107,7 @@ aside div ul {
   vertical-align: middle;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .home ul > li:first-child {
     border-left: none;
   }
@@ -160,7 +160,7 @@ aside div ul {
   padding-left: 5px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .playlist {
     visibility: hidden;
   }
@@ -186,7 +186,7 @@ aside div ul {
   padding-top: 15px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .playlist-list {
     visibility: hidden;
   }
@@ -219,7 +219,7 @@ aside div ul {
   font-size: 15px;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 480px) {
   .hr,
   .account a,
   .account p {
@@ -270,7 +270,7 @@ aside div ul {
 
 .sinister {
   color: white;
-  flex-basis: 200px;
+  flex-basis: 250px;
 }
 
 .sinister img {
@@ -375,7 +375,7 @@ aside div ul {
 /* Volume section */
 
 .volume {
-  flex-basis: 200px;
+  flex-basis: 250px;
   padding-right: 12px;
 }
 
@@ -396,6 +396,7 @@ aside div ul {
   width: calc(100vw - 200px);
   height: calc(100vh - 70px);
   overflow: auto;
+  background-color: #141a23;
 }
 
 @media all and (max-width: 767px) {
@@ -425,7 +426,6 @@ aside div ul {
 
 .upgrade a:hover {
   font-size: 12px;
-  border: 2px solid white;
 }
 
 .upgrade a:hover {
@@ -437,9 +437,7 @@ aside div ul {
 .charts-library {
   display: flex;
   flex-direction: column;
-  height: 100% - 71.97px;
-  background-color: #141a23;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 /* Charts section */
@@ -487,18 +485,25 @@ aside div ul {
 /* Recent played section */
 
 .space-in-row {
-  flex-basis: calc(100vw / 6);
+  flex-basis: calc(100% / 6);
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
   .space-in-row {
-    flex-basis: calc(100vw / 4);
+    flex-basis: calc(100% / 4);
+  }
+}
+
+@media all and (max-width: 580px) {
+  .space-in-row {
+    flex-basis: calc(100% / 2);
   }
 }
 
 .wrapper-cover {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .recenty-played h3 {
@@ -509,7 +514,7 @@ aside div ul {
 }
 
 .recenty-played div {
-  padding: 0 10px;
+  padding: 0 2.5px;
 }
 
 .wrapper-img {
