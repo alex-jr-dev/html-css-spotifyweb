@@ -555,6 +555,12 @@ aside div ul {
   display: inline-block;
 }
 
+@media all and (max-width: 580px) {
+  .charts ul > li {
+    padding-top: 15px;
+  }
+}
+
 /* Recent played section */
 
 .space-in-row {
@@ -613,6 +619,7 @@ aside div ul {
   left: 50%;
   transform: translate(-50%, -50%);
   visibility: hidden;
+  cursor: pointer;
 }
 
 .wrapper-img img {
@@ -625,6 +632,7 @@ aside div ul {
   background-color: black;
   opacity: 30%;
   visibility: visible;
+  cursor: pointer;
 }
 
 .recenty-played div:hover > i {
